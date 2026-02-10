@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lunatic Fashion Store</title>
+  <style>
+    :root {
+      --primary: #7c3aed;
+      --dark: #0b0b14;
+      --card: #141428;
+      --text: #eaeaf0;
+      --muted: #9ca3af;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(180deg, #0b0b14, #120020);
+      color: var(--text);
+    }
+    a { color: var(--primary); text-decoration: none; }
+    header {
+      padding: 80px 20px;
+      text-align: center;
+      background: radial-gradient(circle at top, #7c3aed33, transparent 60%);
+    }
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 4px;
+      margin-bottom: 10px;
+    }
+    header p { color: var(--muted); }
+    .socials span { margin: 0 10px; font-size: 0.9rem; }
+
+    section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+    h2 { color: var(--primary); margin-bottom: 20px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: linear-gradient(180deg, var(--card), #0f0f1f);
+      border-radius: 16px;
+      padding: 20px;
+      border: 1px solid #2a2a40;
+    }
+    .card img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    .price { color: #22c55e; font-weight: bold; }
+    .old { text-decoration: line-through; color: #ef4444; font-size: 0.9rem; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table th, table td {
+      border: 1px solid #2a2a40;
+      padding: 12px;
+      text-align: center;
+    }
+    table th { background: #1f1f3a; }
+
+    footer {
+      background: #05050c;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>LUNATIC FASHION STORE</h1>
+  <p>Futuristic Muslim Wear for Modern Family</p>
+  <div class="socials">
+    <span>Instagram: @lunatic_fs</span>
+    <span>TikTok: @lunatic_fs</span>
+    <span>WhatsApp: 0823-2202-1086</span>
+    <span>Facebook: Lunatic Fashion Store</span>
+  </div>
+</header>
+
+<section>
+  <h2>Produk Unggulan</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="assets/images/gamis-couple-elegance.jpg" alt="Gamis Couple">
+      <h3>Gamis Couple Elegance</h3>
+      <p>Desain futuristik dengan sentuhan elegan, cocok untuk acara formal keluarga.</p>
+      <p><span class="old">Rp550.000</span> <span class="price">Rp449.000</span></p>
+    </div>
+    <div class="card">
+      <img src="assets/images/gamis-wanita-aurora.jpg" alt="Gamis Wanita">
+      <h3>Gamis Wanita Aurora</h3>
+      <p>Material premium flowy, nyaman digunakan seharian.</p>
+      <p><span class="old">Rp399.000</span> <span class="price">Rp329.000</span></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Best Seller</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="assets/images/gamis-couple-anak.jpg" alt="Gamis Couple Anak">
+      <h3>Gamis Couple + Anak</h3>
+      <p>Serasi untuk seluruh keluarga, detail jahitan rapi dan eksklusif.</p>
+      <p class="price">Rp699.000</p>
+    </div>
+    <div class="card">
+      <img src="assets/images/celana-anak-7-12.jpg" alt="Celana Anak">
+      <h3>Celana Anak (7–12 Tahun)</h3>
+      <p>Fleksibel, kuat, dan nyaman untuk aktivitas anak.</p>
+      <p class="price">Rp189.000</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Katalog & Detail Produk</h2>
+  <p>Kami menyediakan beberapa varian harga untuk produk hampir serupa agar pelanggan dapat memilih sesuai kebutuhan.</p>
+  <table>
+    <tr>
+      <th>Varian</th>
+      <th>Material</th>
+      <th>Detail Jahitan</th>
+      <th>Harga</th>
+    </tr>
+    <tr>
+      <td>Basic</td>
+      <td>Poly Cotton</td>
+      <td>Standar</td>
+      <td>Rp299.000</td>
+    </tr>
+    <tr>
+      <td>Premium</td>
+      <td>Silk Blend</td>
+      <td>Detail Rapi</td>
+      <td>Rp399.000</td>
+    </tr>
+    <tr>
+      <td>Exclusive</td>
+      <td>Japanese Silk</td>
+      <td>Handcrafted</td>
+      <td>Rp549.000</td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h2>Tentang Lunatic Fashion Store</h2>
+  <p>Lunatic Fashion Store adalah toko fashion muslim modern yang mengedepankan desain futuristik, kualitas material terbaik, dan kenyamanan untuk seluruh keluarga. Setiap produk dirancang dengan detail pengerjaan yang presisi untuk menunjang kepercayaan diri Anda.</p>
+  <p><strong>Alamat:</strong> Jl. Contoh Alamat No. 123, Indonesia</p>
+</section>
+
+<footer>
+  <p>© 2026 Lunatic Fashion Store</p>
+  <p>Jl. Contoh Alamat No. 123, Indonesia</p>
+</footer>
+
+</body>
+</html>
